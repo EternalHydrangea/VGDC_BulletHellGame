@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 
         // Keep player inside screen
         Vector3 pos = transform.position;
-        pos.x = Mathf.Clamp(pos.x, -8f, 8f);
+        pos.x = Mathf.Clamp(pos.x, -9.5f, 9.5f);
         pos.y = Mathf.Clamp(pos.y, -4.5f, 4.5f);
         transform.position = pos;
     }
