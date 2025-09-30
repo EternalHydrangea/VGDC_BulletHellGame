@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BoucingMovement : MonoBehaviour
+public class BouncingMovement : MonoBehaviour
 {
     // Initial velocity of the object
     public Vector2 velocity = new Vector2(5f, 5f);
