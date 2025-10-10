@@ -6,9 +6,12 @@ public class PlayerController : MonoBehaviour
     public float normalSpeed = 5f;  // normal speed
     public float focusSpeed = 2f;   // slow "focus mode"
     public float bulletSpeed = 10f;
-    public BouncingMovement bulletPrefab;
+    public PlayerBulletMovement bulletPrefab;
     private Vector2 moveDir;
     private Vector2 lastMoveDir;
+    private float shootingTimer = 0f;
+
+    public float shootingInterval = 0.5f; // Time between shots in seconds
 
     void Update()
     {
@@ -27,8 +30,12 @@ public class PlayerController : MonoBehaviour
         if (Keyboard.current.spaceKey.isPressed)
         {
             // Call your shooting function here
-            BouncingMovement bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
-            bullet.velocity = lastMoveDir * bulletSpeed;
+            if (Time.time >= shootingTimer)
+            {
+                Shoot();
+                shootingTimer = Time.time + shootingInterval;
+            }
+            
         }
     }
 
@@ -39,6 +46,13 @@ public class PlayerController : MonoBehaviour
         {
             lastMoveDir = moveDir;
         }
+    }
+
+    void Shoot()
+    {
+        PlayerBulletMovement bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
+        bullet.velocity = lastMoveDir * bulletSpeed;
+        WaitForSeconds wait = new WaitForSeconds(2f);
     }
 
     
