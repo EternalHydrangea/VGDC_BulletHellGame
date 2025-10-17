@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 6488907752299880378}
   - component: {fileID: 5825318937885092684}
   - component: {fileID: -3725856881420235852}
+  - component: {fileID: 6099053224779080027}
   m_Layer: 7
-  m_Name: EnemyBullet
+  m_Name: SpreadingBullet
   m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -182,4 +183,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BouncingMovement
   velocity: {x: 5, y: 5}
-  lifetime: 4
+  lifetime: 10
+--- !u!114 &6099053224779080027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3392899605743020375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93c21ef578c7c4610a29cfee485f23bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  bulletPrefab: {fileID: -3725856881420235852, guid: 87922de5709eb458bb2812d3b73f1580, type: 3}
+  GameTime: 0
