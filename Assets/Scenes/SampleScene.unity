@@ -739,7 +739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20758072a0bbd4c34b74b9f2b793394d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::spawnBullet
-  bulletPrefab: {fileID: 8689728397809286230, guid: 87922de5709eb458bb2812d3b73f1580, type: 3}
+  bulletPrefab: {fileID: -3725856881420235852, guid: 87922de5709eb458bb2812d3b73f1580, type: 3}
   GameTime: 0
 --- !u!4 &626943887
 Transform:
