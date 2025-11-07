@@ -91,7 +91,7 @@ public class Boss2BulletSpawn : MonoBehaviour
                 Bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
                 //top right
                 Bullet.velocity = new Vector2(-5f, 4f);
-                shootCycle = 1;
+                shootCycle = 0;
             }
         }
     }

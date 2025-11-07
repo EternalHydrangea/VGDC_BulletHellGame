@@ -7,7 +7,7 @@ public class BouncingMovement : MonoBehaviour
     // Initial velocity of the object
     public Vector2 velocity = new Vector2(5f, 5f);
     private float startTime;
-    public float lifetime = 4f;
+    public float lifetime = 3.5f;
     void Start()
     {
         // give the object the initial velocity

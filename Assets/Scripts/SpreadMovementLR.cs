@@ -2,7 +2,7 @@ using UnityEditor.Callbacks;
 using UnityEngine;
 using UnityEngine.Rendering.RenderGraphModule;
 
-public class SpreadMovement : MonoBehaviour
+public class SpreadMovementLR : MonoBehaviour
 {
    public BouncingMovement bulletPrefab;
     public int GameTime = 0;
@@ -32,6 +32,6 @@ public class SpreadMovement : MonoBehaviour
             Spawn();
         }
         //Debug.Log(GameTime);
-        Debug.Log(transform.position);
+        //Debug.Log(transform.position);
     }
 }
