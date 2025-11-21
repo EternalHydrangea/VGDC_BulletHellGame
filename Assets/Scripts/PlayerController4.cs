@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
+
 public class PlayerController4 : MonoBehaviour
 {
     public float normalSpeed = 5f;  // normal speed
@@ -13,6 +15,8 @@ public class PlayerController4 : MonoBehaviour
 
     public float shootingInterval = 0.5f; // Time between shots in seconds
 
+    
+
     void Update()
     {
         // Move player
@@ -24,6 +28,9 @@ public class PlayerController4 : MonoBehaviour
         pos.x = Mathf.Clamp(pos.x, -9.5f, 9.5f);
         pos.y = Mathf.Clamp(pos.y, -4.5f, 4.5f);
         transform.position = pos;
+
+
+       
     }
 
     void OnMove(InputValue direction)

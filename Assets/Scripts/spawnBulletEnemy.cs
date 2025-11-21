@@ -6,6 +6,7 @@ public class spawnBulletEnemy : MonoBehaviour
 {
     public BouncingMovement bulletPrefab;
     public int GameTime = 0;
+    public BouncingMovement Bullet;
 //reset the timer when the game starts
     void Start()
     {
@@ -15,7 +16,7 @@ public class spawnBulletEnemy : MonoBehaviour
     void Spawn(){
 
         {
-            BouncingMovement Bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
+            Bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
             //bottom left
             Bullet.velocity = new Vector2(4f, -5f);
             Bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);

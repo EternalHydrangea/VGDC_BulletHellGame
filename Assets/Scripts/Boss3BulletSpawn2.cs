@@ -38,7 +38,7 @@ public class Boss3BulletSpawn2 : MonoBehaviour
     void FixedUpdate()
     {
         GameTime += 1;
-        if (GameTime % 100 == 0)
+        if (GameTime % 150 == 0)
         {
             Spawn();
         }

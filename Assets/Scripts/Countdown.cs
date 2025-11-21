@@ -10,7 +10,7 @@ using System.Collections.Generic;
 public class countdown : MonoBehaviour
 {
    [SerializeField] TextMeshProUGUI timerText; // Reference to the UI Text component
-    public float countdownTime = 60f; // Total countdown time in seconds
+    public float countdownTime = 41f; // Total countdown time in seconds
 
     void Update()
     {

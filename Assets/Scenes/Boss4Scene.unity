@@ -1325,8 +1325,8 @@ GameObject:
   - component: {fileID: 1167266198}
   - component: {fileID: 1167266197}
   m_Layer: 0
-  m_Name: export 2_0
-  m_TagString: Untagged
+  m_Name: export2_0
+  m_TagString: Sign
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1602,7 +1602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   timerText: {fileID: 668274999}
-  countdownTime: 60
+  countdownTime: 45
 --- !u!114 &1891626316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1749,7 +1749,13 @@ MonoBehaviour:
   bulletPrefab1: {fileID: 2036524662642714074, guid: c1700e94591a1478499d843d1c19a833, type: 3}
   bulletPrefab2: {fileID: 669682906446615350, guid: 33ca2f829c9e94d22b681cc6dcb8ba6c, type: 3}
   bulletPrefab3: {fileID: 3112663523455635099, guid: 54dc46b008cce45daa4d7373583c867d, type: 3}
+  bulletPrefab4: {fileID: 3112663523455635099, guid: 71b1a4dc003744f3f96cfcb3c2fa9633, type: 3}
+  Goal: {fileID: 6360548442274417390, guid: 3a58e84f3f7474cc69f7085b4f2667f3, type: 3}
   GameTime: 0
+  minX: -4
+  maxX: 4
+  minY: -4
+  maxY: 4
 --- !u!4 &2013290406
 Transform:
   m_ObjectHideFlags: 0

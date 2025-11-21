@@ -8,6 +8,8 @@ TagManager:
   - Boss
   - PlayerBullet
   - EnemyBullet
+  - Sign
+  - endGoal
   layers:
   - Default
   - TransparentFX
@@ -19,8 +21,8 @@ TagManager:
   - EnemyBullet
   - PlayerBullet
   - Boss
-  - 
-  - 
+  - LazerBullet
+  - endGoal
   - 
   - 
   - 
